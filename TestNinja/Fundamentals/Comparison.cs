@@ -5,6 +5,26 @@ namespace TestNinja.Fundamentals
 {
     public class Comparison
     {
+        #region MainComparison
+        //Var 5
+        /// <summary>
+        /// Умножает 2 цифры и сравнивает больше она 10 или нет
+        /// </summary>
+        /// <param name="a">Первая цифра</param>
+        /// <param name="b">Вторая цифра</param>
+        /// <returns></returns>
+        public bool MultiplicationGreaterThan10(int a, int b)
+        {
+            if (a * b > 10)
+                return true;
+            if (a * b < 10)
+                return false;
+            return true;
+        }
+
+        #endregion
+
+        #region OtherComparison
         //Var 1
         public bool AgreaterThanB(int a, int b)
         {
@@ -38,15 +58,6 @@ namespace TestNinja.Fundamentals
             if (a + b < 10)
                 return true;
             if (a + b > 10)
-                return false;
-            return true;
-        }
-        //Var 5
-        public bool MultiplicationGreaterThan10(int a, int b)
-        {
-            if (a * b > 10)
-                return true;
-            if (a * b < 10)
                 return false;
             return true;
         }
@@ -135,7 +146,7 @@ namespace TestNinja.Fundamentals
         //Var 15
         public bool LogicalXOR(bool a, bool b)
         {
-            if ((a && b)|| (!a && !b))
+            if ((a && b) || (!a && !b))
                 return true;
             if (!((a && b) || (!a && !b)))
                 return false;
@@ -232,6 +243,8 @@ namespace TestNinja.Fundamentals
                 return false;
             return true;
         }
+
+        #endregion
 
 
     }
