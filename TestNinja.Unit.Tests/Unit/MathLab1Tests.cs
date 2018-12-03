@@ -5,10 +5,10 @@ using TestNinja.Fundamentals;
 namespace TestNinja.Unit.Tests
 {
     [TestClass]
-    public class MathLabTests
+    public class MathLab1Tests
     {
         [TestMethod]
-        public void CanBeCancelledBy_MultiplicationGreaterThan10__ReturnsTrue()
+        public void Multiplication_IsGreaterThan10_ReturnsTrue()
         {
             #region Arrange
             var comparison = new Comparison();
@@ -24,7 +24,7 @@ namespace TestNinja.Unit.Tests
         }
 
         [TestMethod]
-        public void CanBeCancelledBy_MultiplicationGreaterThan10__ReturnsFalse()
+        public void Multiplication_IsGreaterThan10_ReturnsFalse()
         {
             #region Arrange
             var comparison = new Comparison();
@@ -40,7 +40,7 @@ namespace TestNinja.Unit.Tests
         }
 
         [TestMethod]
-        public void CanBeCancelledBy_MultiplicationGreaterThan10__ReturnsIsNotNull()
+        public void Multiplication_IsGreaterThan10_ReturnsIsEqually()
         {
             #region Arrange
             var comparison = new Comparison();
