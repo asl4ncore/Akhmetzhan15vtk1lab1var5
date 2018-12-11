@@ -23,7 +23,11 @@ namespace TestNinja.Unit.Tests
         [TestCase(2, 1, 2)]
         [TestCase(1, 2, 2)]
         [TestCase(1, 1, 1)]
-
+        #region ErrorTests
+        //[TestCase(2, 1, 1)]
+        //[TestCase(1, 2, 1)]
+        //[TestCase(1, 1, 2)]
+        #endregion
         public void Max_WhenCalled_ReturnTheGreatherArgument(int a, int b,int expectedResult)
         {
             #region Act
@@ -39,7 +43,11 @@ namespace TestNinja.Unit.Tests
         [TestCase(2, 1, 3)]
         [TestCase(1, 2, 3)]
         [TestCase(1, 1, 2)]
-
+        #region ErrorTests
+        //[TestCase(1, 1, 3)]
+        //[TestCase(1, 1, -2)]
+        //[TestCase(-1, -1, 2)]
+        #endregion
         public void Add_WhenCalled_ReturnTheGreatherArgument(int a, int b, int expectedResult)
         {
             #region Act
@@ -51,22 +59,5 @@ namespace TestNinja.Unit.Tests
             #endregion
         }
         #endregion
-
-        #region ErrorTest
-        //[Test]
-        //[TestCase(1, 1, 3)]
-        //public void ErrorAdd_WhenCalled_ReturnTheGreatherArgument(int a, int b, int expectedResult)
-        //{
-        //    #region Act
-        //    var result = _math.Add(a, b);
-        //    #endregion
-
-        //    #region Assert
-        //    Assert.That(result, Is.EqualTo(expectedResult));
-        //    #endregion
-        //}
-        #endregion
-
-
     }
 }

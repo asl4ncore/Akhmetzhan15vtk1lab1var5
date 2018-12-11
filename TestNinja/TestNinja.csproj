@@ -56,6 +56,9 @@
   <ItemGroup>
     <Compile Include="Fundamentals\Assignment1.cs" />
     <Compile Include="Fundamentals\Assignment2.cs" />
+    <Compile Include="Fundamentals\Assignment3.cs" />
+    <Compile Include="Fundamentals\Assignment4.cs" />
+    <Compile Include="Fundamentals\Assignment5.cs" />
     <Compile Include="Fundamentals\Comparison.cs" />
     <Compile Include="Fundamentals\Math_Lab2.cs" />
     <Compile Include="Fundamentals\Reservation.cs" />

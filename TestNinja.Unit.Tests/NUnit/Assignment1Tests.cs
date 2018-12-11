@@ -20,11 +20,16 @@ namespace TestNinja.Unit.Tests.NUnit
 
         #region Tests
         [Test]
-        [TestCase(1, 2,3,6 )]
-        [TestCase(5, 1, 1,0)]
-        [TestCase(1,5 ,1,0 )]
+        [TestCase(1, 2, 3, 6 )]
+        [TestCase(5, 1, 1, 0)]
+        [TestCase(1, 5 ,1, 0 )]
         [TestCase(1, 1, 5, 0)]
-
+        #region ErrorTests
+        //[TestCase(1, 2, 3, 5)]
+        //[TestCase(5, 1, 1, 7)]
+        //[TestCase(1, 5, 1, 7)]
+        //[TestCase(1, 1, 5, 7)]
+        #endregion
         public void TrainglePerimeter_WhenCalled_ReturnTheGreatherArgument(int a, int b, int c,int expectedResult)
         {
             #region Act
